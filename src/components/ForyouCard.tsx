@@ -3,17 +3,18 @@ import  Image from 'next/image';
 import { FaStar } from "react-icons/fa";
 import {IoCartOutline } from "react-icons/io5";
 import { HiOutlineEye } from "react-icons/hi";
+import Link from "next/link"
 
 interface Products {
     image: string | StaticImageData;
-    productAlt : string
+    productAlt? : string
     title : string 
     price : number
     cutPrice? : string
     offer? : string
     classes? : string
-    reviewStars : number
-    reviewCount : number
+    reviewStars? : number
+    reviewCount? : number
    
 }
 function ForyouCard({image , productAlt, title , price , cutPrice , reviewStars , reviewCount , offer , classes} : Products) {
@@ -28,9 +29,9 @@ function ForyouCard({image , productAlt, title , price , cutPrice , reviewStars 
 
             
             <IoCartOutline className='text-2xl' />
-            <p className='text-xs'>Add To Cart</p>
+            <Link className='text-xs' href= "/productdetails/">Add To Cart</Link>
             </div>
-            <Image className='-mt-8 w-[150px] h-auto' src={image} alt={productAlt}></Image>
+            <Image className='-mt-8 w-[150px] h-auto' src={image} alt={productAlt ?? ""}></Image>
         </div>
         <p>{title}</p>
         <p className='flex gap-3'>

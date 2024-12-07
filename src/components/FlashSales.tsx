@@ -15,7 +15,7 @@ function FlashSales() {
           {/* Today's Label */}
           <div className="flex gap-2 ">
             <div className="w-2 h-8 bg-[#db4444] rounded-sm"></div>
-            <p className="font-semibold text-[#db4444] text-lg">Today's</p>
+            <p className="font-semibold text-[#db4444] text-lg">Today&apos;s</p>
           </div>
 
           {/* Flash Sales Title and Timer */}
