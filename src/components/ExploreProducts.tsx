@@ -14,7 +14,8 @@ import EP8 from '../../public/images/explorePRoducts/8.png'
 
 function ExploreProducts() {
   return (
-    <div className="flex flex-col gap-5 mx-5 sm:mx-24 my-10 sm:my-32">
+   <div className="flex justify-center items-center">
+     <div className="flex flex-col gap-5 mx-5 sm:mx-24 my-10 sm:my-32 max-w-7xl">
       <div className="flex gap-4 items-center">
         <div className="w-5 h-10 bg-[#db4444] rounded-sm"></div>
         <p className="font-semibold text-[#db4444] text-lg sm:text-xl">Our Products</p>
@@ -32,7 +33,7 @@ function ExploreProducts() {
         </div>
       </div>
 
-      <div className="flex gap-4 flex-wrap justify-center sm:justify-between">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-4">
         <ProductsCard 
           image={EP1}
           productAlt="pet food"
@@ -109,6 +110,7 @@ function ExploreProducts() {
 
       <Link className="py-3 sm:py-4 px-8 sm:px-12 bg-[#db4444] w-[180px] sm:w-[234px] rounded-sm mx-auto mt-8 text-white text-sm sm:text-base" href={''}>View All Products</Link>
     </div>
+   </div>
   );
 }
 

@@ -6,9 +6,10 @@ import speaker from '../../public/images/speaker.png'
 
 function SpeakerAd() {
   return (
-    <div className='flex flex-col-reverse sm:flex-row gap-6 mx-5 sm:mx-24 my-10 px-5 sm:px-10 py-12 bg-black'>
+   <div className="flex justify-center items-center">
+     <div className='flex flex-col-reverse lg:flex-row gap-6 mx-5 sm:mx-24 my-10 px-5 max-w-7xl py-12 bg-black'>
       {/* Left Section */}
-      <div className="flex flex-col gap-7 w-full sm:w-[50%]">
+      <div className="flex flex-col gap-7 w-full">
         <p className="text-green-500 text-sm sm:text-base">Categories</p>
         <h1 className="text-3xl sm:text-5xl leading-tight sm:leading-[60px] text-white">
           Enhance Your Music Experience
@@ -31,16 +32,19 @@ function SpeakerAd() {
             <span className="text-[10px] sm:text-[11px] font-semibold">Seconds</span>
           </p>
         </div>
-        <Link className="py-3 sm:py-4 px-6 sm:px-12 bg-green-500 w-[120px] sm:w-[160px] text-white text-sm sm:text-base" href={''}>
+        <div className="flex flex-start">
+        <Link className="py-3 sm:py-4 px-6 sm:px-12 bg-green-500 text-white text-sm sm:text-base" href={''}>
           Buy Now
         </Link>
+        </div>
       </div>
 
       {/* Right Section (Image) */}
-      <div className="w-full sm:w-[50%] flex justify-center items-center">
+      <div className="w-full  flex justify-center items-center">
         <Image id="dropShadow" className="w-[300px] sm:w-[600px] h-auto" src={speaker} alt="speaker" />
       </div>
     </div>
+   </div>
   )
 }
 

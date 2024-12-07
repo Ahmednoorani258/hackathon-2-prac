@@ -9,7 +9,8 @@ import BS4 from '../../public/images/bestSelling/4.png'
 
 function BestSelling() {
   return (
-    <div className='flex flex-col gap-5 mx-5 sm:mx-16 lg:mx-24 my-16 sm:my-12'>
+    <div className="flex justify-center items-center">
+      <div className='flex flex-col gap-5 mx-5 sm:mx-16 lg:mx-24 my-16 sm:my-12'>
       <div className='flex gap-4 items-center'>
         <div className='w-5 h-10 bg-[#db4444] rounded-sm'></div>
         <p className='font-semibold text-[#db4444]'>This Month</p>
@@ -24,7 +25,7 @@ function BestSelling() {
         </Link>
       </div>
 
-      <div className="flex flex-wrap gap-5 justify-center sm:justify-between mt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-4">
         <ProductsCard
           image={BS1}
           productAlt="coat"
@@ -62,6 +63,7 @@ function BestSelling() {
           reviewCount={65}
         />
       </div>
+    </div>
     </div>
   );
 }

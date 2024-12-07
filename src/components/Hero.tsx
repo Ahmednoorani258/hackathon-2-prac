@@ -12,9 +12,7 @@ function Hero() {
 
   return (
     <div className="flex flex-col lg:flex-row gap-10 lg:mx-auto mx-4 mb-20 max-w-screen-xl px-4 sm:px-6 md:px-8">
-      {/* Sidebar Section */}
       <div className="lg:w-[250px] w-full">
-        {/* Mobile toggle button */}
         <div className="flex justify-between items-center lg:hidden mt-6 mb-2">
           <h3 className="text-lg font-semibold">Categories</h3>
           <button
@@ -24,8 +22,6 @@ function Hero() {
             {isSidebarOpen ? <FaCaretUp /> : <FaCaretDown />}
           </button>
         </div>
-
-        {/* Categories list */}
         <ul
           className={`flex flex-col gap-6 border-r border-gray-300 pt-10 pr-6 lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:flex`}
         >
@@ -55,9 +51,8 @@ function Hero() {
         </ul>
       </div>
 
-      {/* Main Banner Section */}
       <div className="relative flex flex-col lg:flex-row items-center justify-between mt-10 bg-black text-white overflow-hidden shadow-lg w-full max-w-[1200px] mx-auto lg:px-14 sm:px-6">
-        {/* Left Content */}
+   
         <div className="flex flex-col justify-center gap-4 p-6 text-center lg:text-left">
           <div className="flex items-center gap-4 justify-center lg:justify-start">
             <FaApple className="text-white text-3xl lg:text-4xl" />
@@ -76,8 +71,6 @@ function Hero() {
             <GoArrowRight className="text-md lg:text-xl" />
           </div>
         </div>
-
-        {/* Right Image */}
         <div className="w-full lg:w-[476px] max-h-[300px] lg:max-h-[500px]">
           <Image
             className="object-contain"
@@ -89,7 +82,7 @@ function Hero() {
           />
         </div>
 
-        {/* Dot Image Section */}
+ 
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 hidden lg:block">
           <Image
             className="object-contain"
