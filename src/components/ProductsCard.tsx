@@ -3,25 +3,30 @@ import Image from "next/image";
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
+import { randomStars, randomReview } from "@/helper/random";
 
 interface Products {
-  image: string | StaticImageData;
+  imageUrl: string ;
   productAlt: string;
-  title: string;
+  name: string;
   price: number;
-  cutPrice: number;
-  reviewStars: number;
-  reviewCount: number;
+  discountPercentage: number;
+ 
 }
 
+
+  
+
+  
+  
+
+
 function ProductsCard({
-  image,
+  imageUrl,
   productAlt,
-  title,
+  name,
   price,
-  cutPrice,
-  reviewStars,
-  reviewCount,
+  discountPercentage,
 }: Products) {
   return (
     <div className="flex flex-col gap-4 bg-white border rounded-lg shadow hover:shadow-md transition p-4">
@@ -31,7 +36,7 @@ function ProductsCard({
         className="relative flex justify-center items-center w-full h-[250px] bg-[#f5f5f5] overflow-hidden rounded"
       >
         <Image
-          src={image}
+          src={imageUrl}
           alt={productAlt}
           height={280}
           width={280}
@@ -50,23 +55,23 @@ function ProductsCard({
       {/* Product Details */}
       <div className="flex flex-col items-start">
         {/* Title */}
-        <p className="text-sm font-medium uppercase text-gray-800">{title}</p>
+        <p className="text-sm font-medium uppercase text-gray-800">{name}</p>
         {/* Price */}
         <div className="flex gap-3 text-sm mt-2">
           <span className="text-[#bd4444] font-bold">${price}</span>
           <span className="text-gray-500 line-through relative">
-            ${cutPrice}
+            ${discountPercentage}
             <small className="w-[40px] h-[1px] bg-gray-500 absolute left-0 top-1/2 transform -translate-y-1/2"></small>
           </span>
         </div>
         {/* Reviews */}
         <div className="flex items-center gap-2 mt-2">
           <div className="flex">
-            {Array.from({ length: reviewStars }, (_, i) => (
+            {Array.from({ length: randomStars() }, (_, i) => (
               <FaStar key={i} className="text-yellow-400 text-xs" />
             ))}
           </div>
-          <span className="text-xs text-gray-500">({reviewCount})</span>
+          <span className="text-xs text-gray-500">{randomReview()}</span>
         </div>
       </div>
     </div>

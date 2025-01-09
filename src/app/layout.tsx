@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Sale from "@/components/Sale";
+import { SanityLive } from "@/sanity/lib/live";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,6 +35,7 @@ export default function RootLayout({
         <Sale/>
         <Header />
         {children}
+        <SanityLive />
         <Footer />
       </body>
     </html>
