@@ -1,5 +1,4 @@
-import { GetStaticProps } from "next";
-import { client } from "@/sanity/lib/client";
+
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
 import ProductsCard from "./ProductsCard";
 import { defineQuery } from "next-sanity";
@@ -77,6 +76,7 @@ async function FlashSales() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-4">
           {data.map((product:Products) => (
             <ProductsCard
+            key={data.indexOf(product)}
               imageUrl={product.imageUrl}
               productAlt={product.name}
               name={product.name}

@@ -6,7 +6,8 @@ import { IoCartOutline } from "react-icons/io5";
 import { randomStars, randomReview } from "@/helper/random";
 
 interface Products {
-  imageUrl: string ;
+  imageUrl?: string ;
+  image?:StaticImageData;
   productAlt: string;
   name: string;
   price: number;
@@ -36,7 +37,7 @@ function ProductsCard({
         className="relative flex justify-center items-center w-full h-[250px] bg-[#f5f5f5] overflow-hidden rounded"
       >
         <Image
-          src={imageUrl}
+          src={imageUrl ?? ""}
           alt={productAlt}
           height={280}
           width={280}

@@ -37,75 +37,59 @@ function ExploreProducts() {
         <ProductsCard 
           image={EP1}
           productAlt="pet food"
-          title="breed dry dog food"
+          name="breed dry dog food"
           price={100}
-          cutPrice={120}
-          reviewStars={3}
-          reviewCount={35}
-        />
+          discountPercentage={120}
+                  />
         <ProductsCard 
           image={EP2}
           productAlt="canon camera"
-          title="canon eos dslr camera"
+          name="canon eos dslr camera"
           price={960}
-          cutPrice={1200}
-          reviewStars={4}
-          reviewCount={95}
-        />
+          discountPercentage={1200}
+                  />
         <ProductsCard 
           image={EP3}
           productAlt="asus laptop"
-          title="asus fhd gaming laptop"
+          name="asus fhd gaming laptop"
           price={700}
-          cutPrice={900}
-          reviewStars={5}
-          reviewCount={325}
-        />
+          discountPercentage={900}
+                  />
         <ProductsCard 
           image={EP4}
           productAlt="curlogy products"
-          title="Curlogy Product Set"
+          name="Curlogy Product Set"
           price={300}
-          cutPrice={350}
-          reviewStars={4}
-          reviewCount={145}
-        />
+          discountPercentage={350}
+                  />
         <ProductsCard 
           image={EP5}
           productAlt="electric car"
-          title="Kids electric car"
+          name="Kids electric car"
           price={1200}
-          cutPrice={1500}
-          reviewStars={5}
-          reviewCount={65}
-        />
+          discountPercentage={1500}
+                  />
         <ProductsCard 
           image={EP6}
           productAlt="soccer shoes"
-          title="jr zoom soccer cleats"
+          name="jr zoom soccer cleats"
           price={400}
-          cutPrice={420}
-          reviewStars={5}
-          reviewCount={35}
-        />
+          discountPercentage={420}
+                  />
         <ProductsCard 
           image={EP7}
           productAlt="gamepad"
-          title="gp11 shooter usb gamepad"
+          name="gp11 shooter usb gamepad"
           price={360}
-          cutPrice={400}
-          reviewStars={4}
-          reviewCount={55}
-        />
+          discountPercentage={400}
+                  />
         <ProductsCard 
           image={EP8}
           productAlt="jacket"
-          title="Quilted satin jacket"
+          name="Quilted satin jacket"
           price={660}
-          cutPrice={700}
-          reviewStars={4}
-          reviewCount={55}
-        />
+          discountPercentage={700}
+                  />
       </div>
 
       <Link className="py-3 sm:py-4 px-8 sm:px-12 bg-[#db4444] w-[180px] sm:w-[234px] rounded-sm mx-auto mt-8 text-white text-sm sm:text-base" href={''}>View All Products</Link>

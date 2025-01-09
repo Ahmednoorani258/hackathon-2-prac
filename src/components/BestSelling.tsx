@@ -29,38 +29,34 @@ function BestSelling() {
         <ProductsCard
           image={BS1}
           productAlt="coat"
-          title="The North Coat"
+          name="The North Coat"
           price={260}
-          cutPrice={360}
-          reviewStars={5}
-          reviewCount={65}
+          discountPercentage={360}
+         
         />
         <ProductsCard
           image={BS2}
           productAlt="bag"
-          title="Gucci duffle bag"
+          name="Gucci duffle bag"
           price={960}
-          cutPrice={1160}
-          reviewStars={4}
-          reviewCount={65}
+          discountPercentage={1160}
+      
         />
         <ProductsCard
           image={BS3}
           productAlt="cpu cooler"
-          title="rgb liquid cpu cooler"
+          name="rgb liquid cpu cooler"
           price={160}
-          cutPrice={170}
-          reviewStars={5}
-          reviewCount={65}
+          discountPercentage={170}
+        
         />
         <ProductsCard
           image={BS4}
           productAlt="book shelf"
-          title="Small BookShelf"
+          name="Small BookShelf"
           price={360}
-          cutPrice={360}
-          reviewStars={5}
-          reviewCount={65}
+          discountPercentage={360}
+         
         />
       </div>
     </div>
